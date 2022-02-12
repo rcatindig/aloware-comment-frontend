@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.comment-list {
+    margin: 12px;
+}
+
+.comment-username {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.comment-date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+.comment-text {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+button.reply-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.comment-list.parent {
+    border-bottom: 2px dashed gray;
+    margin-bottom: 32px;
+    padding-bottom: 19px;
+}
+
+.comment-list.child {
+    padding-left: 30px;
+    border-left: 1px dotted gray;
+    margin-left: 41px;
+}
+
+textarea.reply-text {
+    vertical-align: middle;
+    width: 80%;
+}
+
+button.reply-submit {
+    margin-left: 12px;
+    height: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input.reply-input {
+    height: 39px;
+    padding: 12px;
+    width: 50%;
+    margin-bottom: 13px;
+}
+
+.reply-section {
+    background-color: #dfdfdf;
+    padding: 12px;
+}
+
+.comment-here {
+    margin-bottom: 12px;
+    font-weight: bolder;
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
