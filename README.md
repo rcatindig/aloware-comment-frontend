@@ -8,9 +8,13 @@ Please change the server constants in `src/helpers/Constants.js`
 ![image](https://user-images.githubusercontent.com/18145922/153724971-669b52a8-a4dd-4654-82d4-e834ca8e70f0.png)
 
 
-## Available Scripts
+## Run the following
 
 In the project directory, you can run:
+
+### `npm install`
+
+need this to install the packages and dependencies
 
 ### `npm start`
 
